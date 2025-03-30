@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Pavan Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- FontAwesome for HTML, CSS, JS, Python, DSA -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<!-- Devicon for Java & C++ -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Pavan</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#Project1">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Blogs</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#content">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#Project1">Services</a>
+                <a href="">Blogs</a>
+                <a href="#content">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+        <section>
+            <div class="main-container">
+                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                    <img src="PHOTO-2025-03-23-13-21-43.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Pavan</span></h1>
+                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span class="point"></span></div>
+                    
+                    <div class="inroduction">
+                        <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">I am a passionate Software Developer, Full Stack Developer, and UI/UX Designer with a knack for crafting seamless digital experiences. Armed with strong problem-solving skills, I specialize in building efficient, scalable, and visually stunning applications that blend functionality with creativity. Whether it’s designing intuitive user interfaces, developing robust back-end systems, or solving complex coding challenges, I thrive on turning ideas into reality with precision and innovation.</p>
+                    </div>
+                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                        <a href="https://github.com/Pavan8104" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/pavan-sharma-1645ab276/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                        <a href="Pavan Resume 23BCS12316 web.pdf" download="Pavan_Sharma_resume.pdf">
+                            <button>Download CV</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <p class="Skills"> My Skills</p>
+            <div class="skills-container">
+                <div class="skill">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-js"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill">
+                    <i class="devicon-java-plain"></i>
+                    <p>Java</p>
+                </div>
+                <div class="skill">
+                    <i class="devicon-cplusplus-plain"></i>
+                    <p>C++</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-solid fa-database"></i>
+                    <p>DSA</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-python"></i>
+                    <p>Python</p>
+                </div>
+            </div>
+        </section>
+        <section id="Project1">
+            <p class="Projects">Work</p>
+            <div class="project-container">
+                <div class="project">
+                    <a href="https://flourishing-sfogliatella-b25a54.netlify.app/" target="_blank">
+                        <img src="Project1.jpeg" alt="Project1">
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>
