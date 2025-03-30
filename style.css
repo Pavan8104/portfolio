@@ -613,4 +613,8 @@ section{
     }
 }
 
-
+@media (max-width: 999px){
+    .nav-container{
+        display: none;
+    }
+}
